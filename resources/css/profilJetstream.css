@@ -1,0 +1,83 @@
+/* Modifier la couleur de fond de la page de profil */
+.profile-page {
+    background-color: #f5f5f5;
+  }
+  
+  /* Modifier la couleur du cadre entourant le contenu */
+  .profile-container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  /* Modifier la couleur du titre de la page */
+  .profile-title {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Modifier le style des sections du profil */
+  .profile-section {
+    margin-bottom: 20px;
+  }
+  
+  /* Modifier la couleur du titre de chaque section */
+  .profile-section-title {
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Modifier la couleur du texte du profil */
+  .profile-text {
+    color: #666;
+  }
+  
+  /* Modifier le style du bouton de modification du profil */
+  .profile-edit-button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Modifier le style des liens dans la section des liens sociaux */
+  .profile-social-link {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  /* Modifier le style des icônes dans la section des liens sociaux */
+  .profile-social-icon {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+  
+  /* Modifier le style du formulaire de mise à jour du profil */
+  .profile-form {
+    margin-top: 20px;
+  }
+  
+  /* Modifier le style des champs de formulaire */
+  .profile-form input[type="text"],
+  .profile-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Modifier le style du bouton de soumission du formulaire */
+  .profile-form button[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

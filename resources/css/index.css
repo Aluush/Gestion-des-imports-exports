@@ -1,0 +1,293 @@
+body{
+  font-family: 'Trebuchet MS';
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+    background-image: url("BACKground1.png");
+    background-size: cover;
+    background-attachment: fixed;
+      font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }
+  
+#tanger{
+  margin-top: -20px;
+  width: 100%;
+  /* margin-bottom: -20px; */
+}
+.row{
+  width: 100%;
+  padding: 0px 40px;
+  margin: 0 !important;
+}
+.col-6{
+  padding: 0 !important;
+}
+#logo{
+  margin-top: -10px;
+  width: 20rem;
+  
+}
+
+.logo h1  { 
+  text-align: center; 
+  color : #bcc75a; 
+  text-decoration: underline ;
+  margin-bottom: 80px;
+  letter-spacing: 3px;
+}
+
+
+p.title::after {
+  content: '';
+  background: #bcc75a;
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* ********************forum***************************** */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    padding: 0 20px;
+    position: relative;
+    margin : 0 auto ;
+  }
+
+  .form2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    padding: 0 20px;
+    position: relative;
+    margin : 0 auto ;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #053166;
+    border-bottom: 2px solid #d5dde5;
+    padding-bottom: 15px;
+    position: relative;
+    padding-right: 30px;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+    margin: 0;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+
+  .form label .input:focus {
+    border: 2px solid royalblue;
+  }
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .aide {
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px 20px 20px 0;
+    color: #000000;
+    font-size: 13px;
+    transform: .3s ease;
+    width: 30%;
+    height : 3em ; 
+    border: 1px solid black ;
+    background-color: white;
+
+  }
+  .reset {
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    background-color: #bcc75a;
+    border-radius: 20px 20px 20px 0;
+    color: #fff;
+    font-size: 13px;
+    transform: .3s ease;
+    width: 90%;
+    height : 3em ; 
+    letter-spacing: 2px;
+    color: #053166;
+    border: 1px solid white;
+  }
+  .submit {
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    background-color: #053166; ;
+    border-radius: 20px 20px 20px 0;
+    color: #fff;
+    font-size: 13px;
+    transform: .3s ease;
+    width: 20em;
+    height : 3em ; 
+    letter-spacing: 2px;
+    border: 1px solid white;
+    padding: 0 20px;
+    margin-left: 20px;
+
+  }
+
+  #myliste{
+    background-color: #bcc75a;
+    border-radius: 20px 20px 20px 0;
+    color: #fff;
+    font-size: 13px;
+    transform: .3s ease;
+    width: 20em;
+    height : 3em ; 
+    letter-spacing: 2px;
+    color: #053166;
+    padding: 0 20px;
+    /* position: absolute; */
+    top:0;
+    right: 0;
+    border: 1px solid white;
+    font-weight: bold;
+    margin-right: 60px;
+  }
+  
+  .goog-te-gadget .goog-te-gadget-simple {
+    display: none !important;
+  }
+  
+  .goog-te-gadget .goog-te-combo { 
+    visibility: visible !important;
+  } 
+
+
+  .goog-te-banner-frame {
+    display: none !important;
+  }
+  
+  
+  select{
+      background-color: #ffffff;
+      color: #fff;
+      font-size: 13px;
+      color: #053166;
+      border: 1px solid white;
+      position: absolute;
+      top:20px;
+      right: 5px;
+      height: 20px;
+      border-radius: 3px;
+      }
+
+  .submit2 {
+    background-color: #053166; ;
+    border-radius: 20px 20px 20px 0;
+    color: #fff;
+    font-size: 13px;
+    transform: .3s ease;
+    width: 20em;
+    height : 3em ; 
+    letter-spacing: 2px;
+    border: 1px solid white;
+    font-weight: bold;
+    margin-left: 60px;
+
+  }
+  select option{
+    background-color: #d5dde5;
+    border-radius: 20px 20px 20px 0;
+
+  }
+
+  select option:hover{
+    border-left: 2px solid #bcc75a;
+
+  }
+  
+button a{
+  color: #fff;
+  text-decoration: none;
+}
+
+button a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+fieldset{
+  border: 1px solid black;
+}
+
+
+
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  footer{
+    padding: 0px 0px 30px 30px ;
+  }

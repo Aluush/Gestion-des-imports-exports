@@ -1,0 +1,99 @@
+.content{
+    margin-top: 20px !important ;
+}
+.diags{
+    background-color: rgba(255, 255, 255, 0.573);
+    padding: 30px !important;
+}
+
+
+***********************content****************************
+form.trier{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    color: #585858;
+    margin: 20px;
+    height: auto;
+  }
+  button.tri{
+    background-color: #bcc75a;
+    border-radius: 20px 20px 20px 0;
+    color: #032a59;
+    border: #fff;
+    font-weight: 600;
+    margin-left: 20px;
+  }
+  /* Styles pour la section "dums" */
+  .dums {
+  align-items: center;
+  margin-top: 20px !important;
+  }
+
+  .dums table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  color: #585858;
+  margin-top: 15px;
+  position: relative;
+  text-align: center;
+  width: 95%;
+  margin: 15px auto;
+  }
+  
+  .dums tr {
+  height: 10px;
+  border-top:1px solid gainsboro ;
+  }
+  
+  .dums thead tr:first-child {
+  background-color: #e3f0fe;
+  color: rgb(23, 37, 78);
+  height: 2px !;
+  }
+
+  
+  .dums tr:nth-child(2n) {
+  background-color: whitesmoke;
+  }
+  .dums tr:nth-child(2n+1) {
+    background-color: white;
+    }
+  
+  /* Media query pour les appareils avec une largeur maximale de 768px */
+  @media (max-width: 768px) {
+  .col-md-2, .col-md-10 {
+  width: 100%;
+  }
+  .mes-infos table {
+  margin: 10px;
+  }
+  }
+
+.container h4{
+  color: #7d93ae;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 30px;
+}
+button.submit{
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  background-color: #bcc75a;
+  border-radius: 20px 20px 20px 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  transform: .3s ease;
+  height : 3em ; 
+  letter-spacing: 2px;
+  color: white;
+  border: 2px solid white;
+  float: right;
+  margin-right: 40px;
+  margin-bottom: 50px;
+}
+
+

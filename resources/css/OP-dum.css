@@ -1,0 +1,311 @@
+/* #Primary style
+================================================== */
+
+.bg-light {
+  background-color: #fff !important;
+    transition: all 200ms linear;
+}
+.section {
+    position: relative;
+  width: 100%;
+  display: block;
+}
+.full-height {
+    height: 100vh;
+}
+.over-hide {
+    overflow: hidden;
+}
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  /* margin-top: 40px; */
+  transform: translateY(-50%);
+  z-index: 20;
+}
+h1{
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #212112;
+  text-align: center;
+}
+p{
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  opacity: 1;
+  transform: translate(0);
+    transition: all 300ms linear;
+    transition-delay: 1700ms;
+}
+body.hero-anime p{
+  opacity: 0;
+  transform: translateY(40px);
+    transition-delay: 1700ms;
+}
+h1 span{
+  display: inline-block;
+    transition: all 300ms linear;
+  opacity: 1;
+  transform: translate(0);
+}
+.nav-item .dropdown-menu {
+    transform: translate3d(0, 10px, 0);
+    visibility: hidden;
+    opacity: 0;
+  max-height: 0;
+    display: block;
+  padding: 0;
+  margin: 0;
+    transition: all 200ms linear;
+}
+.nav-item.show .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+  max-height: 999px;
+    transform: translate3d(0, 0px, 0);
+}
+.dropdown-menu {
+  padding: 10px!important;
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #212121;
+  background-color: #fcfaff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+    transition: all 200ms linear;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-item {
+  padding: 3px 15px;
+  color: #212121;
+  border-radius: 2px;
+    transition: all 200ms linear;
+}
+.dropdown-item:hover, 
+.dropdown-item:focus {
+  color: #fff;
+  background-color: rgba(129,103,169,.6);
+}
+.dropdown-menu a:hover{
+  background-color: #bcc75a;
+  color: white;
+}
+/* #Media
+================================================== */
+
+@media (max-width: 767px) { 
+  h1{
+    font-size: 38px;
+  }
+  .nav-item:after{
+    display: none;
+  }
+  .nav-item::before {
+    position: absolute;
+    display: block;
+    top: 15px;
+    left: 0;
+    width: 11px;
+    height: 1px;
+    content: "";
+    border: none;
+    background-color: #000;
+    /* vertical-align: 0; */
+  }
+  .dropdown-toggle::after {
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: -23px;
+    width: 1px;
+    height: 11px;
+    content: "";
+    border: none;
+    background-color: #000;
+    /* vertical-align: 0; */
+    transition: all 200ms linear;
+  }
+  .dropdown-toggle[aria-expanded="true"]::after{
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  .dropdown-menu {
+    padding: 0 !important;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all 200ms linear;
+  }
+  .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+/* #Link to page
+================================================== */
+
+.logo {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: block;
+  z-index: 100;
+  transition: all 250ms linear;
+}
+.logo img {
+  height: 26px;
+  width: auto;
+  display: block;
+  filter: brightness(10%);
+  transition: all 250ms linear;
+}
+body.dark .logo img {
+  filter: brightness(100%);
+}
+/* ********************content********************** */
+
+
+
+  .content{
+    margin-top: 20px !important ;
+    }
+
+  
+  /* Styles pour la section "mes-infos" */
+  .mes-infos {
+  margin-top: 15px !important;
+  margin: 0px auto !important;
+  }
+  
+
+  button.tri[type="submit"]{
+    background-image: url(icon-search.png);
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+  }
+  .mes-infos table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 90%;
+  margin: 0px auto !important;
+  border: 1px solid gainsboro;
+  }
+  
+  .mes-infos thead :first-child {
+  background-color: #bcc75a;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  color: white;
+  font-size: large;
+  font-weight: lighter;
+  height: 15px;
+  }
+  
+  .mes-infos tr {
+  background-color: white;
+  }
+  
+  .mes-infos tr span {
+  color: royalblue;
+  float: left;
+  font-size: small;
+  font-weight: normal;
+  }
+  /* ***************trier**************** */
+  form.trier{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    color: #585858;
+    margin: 20px;
+    height: auto;
+  }
+  button.tri{
+    background-color: #bcc75a;
+    border-radius: 20px 20px 20px 0;
+    color: #032a59;
+    border: #fff;
+    font-weight: 600;
+    margin-left: 20px;
+  }
+  /* Styles pour la section "dums" */
+  .dums {
+  align-items: center;
+  margin-top: 20px !important;
+  }
+
+  .dums table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  color: #585858;
+  margin-top: 15px;
+  position: relative;
+  text-align: center;
+  width: 95%;
+  margin: 15px auto;
+  }
+  
+  .dums tr {
+  height: 10px;
+  border-top:1px solid gainsboro ;
+  }
+  
+  .dums thead tr:first-child {
+  background-color: #e3f0fe;
+  color: rgb(23, 37, 78);
+  height: 2px !;
+  }
+
+  
+  .dums tr:nth-child(2n) {
+  background-color: whitesmoke;
+  }
+  .dums tr:nth-child(2n+1) {
+    background-color: white;
+    }
+  
+  /* Media query pour les appareils avec une largeur maximale de 768px */
+  @media (max-width: 768px) {
+  .col-md-2, .col-md-10 {
+  width: 100%;
+  }
+  .mes-infos table {
+  margin: 10px;
+  }
+  }
+
+.container h4{
+  color: #7d93ae;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 30px;
+}
+button.submit{
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  background-color: #bcc75a;
+  border-radius: 20px 20px 20px 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  transform: .3s ease;
+  height : 3em ; 
+  letter-spacing: 2px;
+  color: white;
+  border: 2px solid white;
+  float: right;
+  margin-right: 40px;
+  margin-bottom: 50px;
+}
+
